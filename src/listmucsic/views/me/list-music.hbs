@@ -1,0 +1,25 @@
+
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Tên bài Nhạc</th>
+      <th scope="col">Đánh Gía</th>
+      <th scope="col">thời gian</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    {{#each melistmusic}}
+    <tr>
+      <th scope="row">1</th>
+      <td>{{this.name}}</td>
+      <td>{{this.level}}</td>
+      <td>{{this.createdAt}}</td>
+      
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

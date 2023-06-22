@@ -1,0 +1,29 @@
+<div class="mt-4">
+
+<span>Cập Nhật Nhạc</span>
+
+    <form method="post" action="/courses/{{edit._id}}?_method=put">
+            <div class="form-floating mb-3">
+                 <input name="name" type="text" class="form-control" value="{{edit.name}}" id="name" placeholder="Leave a comment here">
+                <label for="name">Name (Tên Bài Hát)</label>
+            </div>
+            <div class="form-floating mb-3">
+                <textarea name="description" class="form-control" rows="3" value="" id="description" >{{edit.description}} </textarea>
+                <label for="description">Description (Miêu Tả Về Bài Hát) </label> 
+            </div>
+            <div class="form-floating mb-3">
+                <input name="video" type="text" class="form-control" value="{{edit.video}}" id="video" placeholder="Leave a comment here">
+                <label for="video">Video (Link Video)</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input name="level" type="text" class="form-control" value="{{edit.level}}" id="level" placeholder="Leave a comment here">
+                <label for="level">Evaluate (Đánh Gía)</label>
+            </div>
+            
+            
+            
+            <button type="submit" class="btn btn-primary">Lưu Lại</button>
+</form>
+</div>
+</div>
+
